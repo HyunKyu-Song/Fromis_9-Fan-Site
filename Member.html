@@ -10,11 +10,11 @@
         display: block;
         font-size: 45px;
         text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+        opacity: 0.8;
       }
       body{
-        background: url("단체사진3.jpg");
-        background-size: cover;
-        opacity: 0.8;
+        background: url("단체사진3.jpg") top fixed;
+        background-size: 100%;
       }
       ul {
         list-style-type: none;
@@ -22,6 +22,7 @@
         padding: 0;
         overflow: hidden;
         background-color: #333;
+        opacity: 0.8;
       }
 
       li {
@@ -36,12 +37,28 @@
         text-decoration: none;
       }
 
-      li a:hover:not(.active) {
+      /* li a:hover:not(.active) {
         background-color: #111;
       }
-
       .active {
         background-color: #04AA6D;
+      } */
+
+      .member_profile{
+        display: grid;
+        grid-template-columns: 400px 400px 400px;
+        grid-column-gap: 80px;
+        grid-row-gap: 20px;
+        background-color: coral;
+        box-shadow: 0 4px 8px 0 coral, 0 6px 20px 0 red;
+        margin-left: 50px;
+        width: 1365px;
+        padding: 10px;
+      }
+      .container{
+        text-align: center;
+        background: white;
+        opacity: 0.8;
       }
     </style>
   </head>
@@ -52,7 +69,71 @@
       <li><a href="Member.html">Member</a></li>
       <li><a href="Award.html">Award</a></li>
     </ul>
-
-    <h2>< 멤버 ></h2>
+    <h2></h2>
+    <div class="member_profile">
+      <div>
+        <img src="이새롬.jpeg" style="width: 400px">
+        <div class="container">
+          <strong>이새롬</strong><br>
+				      1997년 1월 7일 캡틴, 서브보컬, 리드댄서
+        </div>
+      </div>
+      <div>
+        <img src="송하영.jpeg" style="width: 400px">
+        <div class="container">
+          <strong>송하영</strong><br>
+				    	1997년 9월 29일 메인댄서, 리드보컬
+        </div>
+      </div>
+      <div>
+        <img src="장규리.jpeg" style="width: 400px">
+        <div class="container">
+          <strong>장규리</strong><br>
+				    	1997년 12월 27일 리드보컬
+        </div>
+      </div>
+      <div>
+        <img src="박지원.jpeg" style="width: 400px">
+        <div class="container">
+          <strong>박지원</strong><br>
+				    	1998년 3월 20일 메인보컬
+        </div>
+      </div>
+      <div>
+        <img src="노지선.jpeg" style="width: 400px">
+        <div class="container">
+          <strong>노지선</strong><br>
+				    	1998년 11월 23일 센터, 서브보컬, 리드댄서
+        </div>
+      </div>
+      <div>
+        <img src="이서연.jpeg" style="width: 400px">
+        <div class="container">
+          <strong>이서연</strong><br>
+				    	2000년 1월 22일 메인래퍼, 서브보컬
+        </div>
+      </div>
+      <div>
+        <img src="이채영.jpeg" style="width: 400px">
+        <div class="container">
+          <strong>이채영</strong><br>
+				    	2000년 5월 14일 메인대서, 서브보컬, 리드래퍼
+        </div>
+      </div>
+      <div>
+        <img src="이나경.jpeg" style="width: 400px">
+        <div class="container">
+          <strong>이나경</strong><br>
+				    	2000년 6월 1일 서브보컬, 리드댄서
+        </div>
+      </div>
+      <div>
+        <img src="백지헌.jpeg" style="width: 400px">
+        <div class="container">
+          <strong>백지헌</strong><br>
+							2003년 4월 17일 서브보컬
+        </div>
+      </div>
+    </div>
   </body>
 </html>
